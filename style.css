@@ -1,0 +1,77 @@
+/* Basic reset to remove default margin and padding */
+body, h2, form, table {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the form container */
+  #registrationForm {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  /* Style for form input fields */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"],
+  input[type="checkbox"],
+  button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  
+  input[type="checkbox"] {
+    width: auto;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #624d4d;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style for the table */
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style for the Date of Birth (DOB) error message */
+  #error-dob-message {
+    color: red;
+    font-size: 0.8em;
+    display: none;
+    margin-top: 5px;
+  }
+  

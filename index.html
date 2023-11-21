@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Form</title>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form id="registrationForm" onsubmit="return validateForm()">
+    <h2>Registration Form</h2>
+    
+    <!-- Input fields -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required><br><br>
+    
+    <label for="acceptedTerms">Accept Terms:</label>
+    <input type="checkbox" id="acceptedTerms" name="acceptedTerms" required><br><br>
+    
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Table to display user data -->
+  <table id="userData">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>DOB</th>
+        <th>Accepted terms?</th>
+      </tr>
+    </thead>
+    <tbody id="userDataBody">
+      <!-- Data will be populated dynamically after form submission -->
+    </tbody>
+  </table>
+</body>
+</html>
